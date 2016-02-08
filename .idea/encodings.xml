@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/pl/pg/eti/msu/myapplication/CustomDrawableView.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/pl/pg/eti/msu/myapplication/DrawView.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/pl/pg/eti/msu/myapplication/MainActivity.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/pl/pg/eti/msu/myapplication/MarshalDouble.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/pl/pg/eti/msu/myapplication/Pos.java" charset="windows-1250" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:paddingRight="@dimen/activity_horizontal_margin"
+		android:paddingTop="@dimen/activity_vertical_margin"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		tools:showIn="@layout/activity_main"
+		tools:context=".MainActivity"
+		android:orientation="vertical">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+		<ProgressBar
+				android:id="@+id/progressBar2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" />
+
+		<TextView
+				android:id="@+id/result"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="__Results gonna go here__" />
+	</LinearLayout>
+
+
+	<LinearLayout
+			android:id="@+id/imageframe"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="top"
+			android:layout_marginBottom="@dimen/big_margin"
+			android:layout_marginTop="@dimen/fab_margin"
+			android:orientation="vertical">
+
+		<pl.pg.eti.msu.myapplication.CustomDrawableView
+				android:id="@+id/customowamapa"
+				android:layout_width="fill_parent"
+				android:layout_height="10dp"
+				android:layout_gravity="center"
+				android:layout_marginBottom="@dimen/fab2_margin"
+				android:background="@drawable/mapka300x191i" />
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/StartPoint" />
+
+			<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="X"
+					android:inputType="number|numberDecimal"
+					android:singleLine="true"
+					android:id="@+id/tbXfrom"
+					android:text="" />
+
+			<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="Y"
+					android:inputType="number|numberDecimal"
+					android:singleLine="true"
+					android:id="@+id/tbYfrom"
+					android:text="" />
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/EndPoint" />
+
+			<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="X"
+					android:inputType="number|numberDecimal"
+					android:singleLine="true"
+					android:id="@+id/tbXto"
+					android:text="" />
+
+			<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="Y"
+					android:inputType="number|numberDecimal"
+					android:singleLine="true"
+					android:id="@+id/tbYto"
+					android:text="" />
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			<Button
+					android:layout_width="0pt"
+					android:layout_height="@dimen/big_margin"
+					android:layout_weight="1"
+					android:onClick="btPXclick"
+					android:text="@string/getMapFragment" />
+
+			<Button
+					android:layout_width="0pt"
+					android:layout_height="@dimen/big_margin"
+					android:layout_weight="1"
+					android:onClick="btGPSclick"
+					android:text="@string/getMapFragmentGPS" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+	<string name="app_name">My Application</string>
+	<string name="action_settings">Settings</string>
+	<string name="EndPoint">End point:</string>
+	<string name="StartPoint">Start point:</string>
+	<string name="getMapFragment">Pobierz fragment mapy [PX]</string>
+	<string name="getMapFragmentGPS">POBIERZ FRAGMENT MAPY [GPS]</string>
+
+</resources>
